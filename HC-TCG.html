@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+    <title>HC-TCG</title>
+</head>
+<body>
+    <button type="button" class="dark" id="darkButton" onclick = "toggleDark()">
+        <img id="darkToggle" src="./images/moon.png" width="40" height="40"  alt="buttonpng"/>
+    </button>
+    <h1>HC-TCG</h1>
+    <div class="flex-container" id="flex">
+        <div class = "child child1" id="info">
+            <h3>Info</h3>
+            <p>
+                HC-TCG is my attempt to recreate the Hermitcraft trading card game. Originally created by the Youtuber VintageBeef
+                 in Minecraft with pixel art, his fans made an online version so other people could play. I was inspired by their idea,
+                 and at the time I needed a way to practice my programming for the AP tests. I started the projects with no real 
+                 expectations but it quickly became my way to find something to do. I would figure out one feature or bug then do 
+                 other work. 
+            </p>
+            <p>
+                The game is made in Java and completely text-based. At the time, I had no knowledge of how to make images work in
+                 programming so I printed out any data the players needed. The board is a 2D array with each slot in the grid being 
+                 used for different types of cards. Players input numbers based off a given list to make descisions in play.
+            </p>
+        </div>
+        <div class = "child child1" id="process">
+            <h3>Process</h3>
+            <ul class="">
+                <li class="list">I programmed the project using the IDE BlueJ. It was what I was familiar with at the time and was using in class.</li>
+                <li class="list">When building the structure, I started from the smallest base for a card based game, being what is a card and what
+                 are the different types of cards.</li>
+                <li class="list">Then I built out from there with the deck and hand for the cards to go into, including random pulling from the database
+                    containing all the cards as objects.</li>
+                <li class="list">The last things I made were the board and the player. I had to know what a player <em>could</em> do before figuring out 
+                    how to code it.</li>
+                <li class="list">Once I got the main structure of the game working, I spent the remainder of my time debugging and working out problems 
+                    and things that weren't running smoothly when playing.
+                </li>
+            </ul>
+        </div>
+        <div class = "child child1" id="images">
+            <h3>Images</h3>
+            <img src="./images/HCTCG/startScreen.png" width="800" height="429" alt="startScreen">
+            <img src="./images/HCTCG/addHermit.png" width="800" height="256" alt="addHermit">
+            <img src="./images/HCTCG/addItem.png" width="800" height="333" alt="addItem">
+            <img src="./images/HCTCG/getInfo.png" width="500" height="482" alt="getInfo">
+        </div>
+    </div>
+<script src="hctcgScript.js"></script>
+</body>
+</html>

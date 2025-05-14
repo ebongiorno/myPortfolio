@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+    <title>My Portfollio</title>
+</head>
+<body id="home">
+    <div class="topnav" id="top">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a type="button" class="dark" id="darkButton" onclick = "toggleDark()"><img id="darkToggle" src="./images/moon.png" width="40" height="40"  alt="buttonpng"style="float:right"/></a>
+     </div>
+    <header>
+        <h1 style="text-align:center">Emily Bongiorno</h1>
+        <img class="avatar" src="./images/Senior%20picture.JPG" width="207" height="250" alt="Avatar">
+        <hr style="width:50%;text-align:center;border:5px dashed #e2bafa">
+        <h4 style="text-align:center">"Not sure how we got here, but let's make the most of it"</h4>
+    </header>
+    <section>
+        <div class="flex-container" id="flex">
+            <div class = "child child1" id="about">
+                <h3>About</h3>
+                <p>Hi I'm Emily! I'm a 2nd year Computer Science major at Cal State Fullerton. 
+                    I first got into computers from a middle school class and have been facinated 
+                    ever since. When asked why I chose my major, I tell people that I like creating. 
+                    I like being able to type something out and have it do things on the screen. That 
+                    might lead more towards game design, but I've always felt more interested in playing 
+                    games than making them. I hope to make a carreer out of software in this ever-changing 
+                    world and make some cool things along the way.
+                </p>
+                <p>
+                    When not figuring out endless bugs in programs, I enjoy reading and playing games. 
+                    Choosing to loose myself in fantasy worlds to relax outside the lines of code. I like 
+                    taking characters and thinking about other situations to throw them in outside their normal worlds to create even more interesting stories.
+                </p>
+                <p>To see more about me, check out my resume <a class="link" id="linkClick" href="">here</a>.</p>
+            </div>
+            <div class = "child child2" id="projects">
+                <h3>Projects</h3>
+                <ul>
+                    <li><a class="link" id="linkClick" href="./HC-TCG.html" target="_blank">HC-TCG</a></li>
+                    <ul>
+                        <li>My first exploration into a full project. A fan game of a fan game that taught me how to deal with starting from scratch and figuring everything out from context.</li>
+                    </ul>
+                    <li><a class="link" id="linkClick" href="./Deck Game.html" target="_blank">Deck Game</a></li>
+                    <ul>
+                        <li>My first proper software project build from concept to finish. Made as a partner project in a Software Development class.</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class = "child child3" id="skills">
+                <h3>Skills</h3>
+                <span class="listLabel">Technical</span>
+                <ul>
+                    <li>Programming languages</li>
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                        </ul>
+                    <li>Apple Office</li>
+                    <li>Statistics and Data Visualization</li>
+                </ul>
+                <span class="listLabel">Non-Technical</span>
+                <ul>
+                    <li>Communication</li>
+                    <li>Cooperation</li>
+                    <li>Organization</li>
+                    <li>Prioritization</li>
+                </ul>
+            </div>
+            <div class = "child child4" id="contact">
+                <h3>Contacts</h3>
+                <ul>
+                    <!------------------>
+                    <li> 
+                        <a class="link" id="linkClick" href="https://github.com/ebongiorno" target="_blank">
+                            <img src="./images/github.png" width="40" height="40" alt="Github">
+                        </a>
+                        Github
+                    </li>
+                    <li>
+                        <a class="link" id="linkClick" href="https://www.linkedin.com/in/emily-bongiorno-430217287/" target="_blank">
+                            <img src="./images/linkedin.png" width="40" height="40" alt="LinkedIn">
+                        </a>
+                        LinkedIn
+                    </li>
+
+                    <!------------------>
+                    <li>
+                        <div class="expandable">
+                            <div class="expandable__title-bar" id="titleBar">
+                                <span class="expandable__title" id="title">Contact Form</span>
+                                <ion-icon class="expandable__icon"  name="chevron-back"></ion-icon>
+                            </div>
+                            <div class="expandable__content-wrapper">
+                            <div class="expandable__content container" id="contactFormWrap">
+                                <form method="POST" action="egbongiorno@gmail.com" class="contactForm">
+                        
+                                    <label for="name" class="nameLabel">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name...">
+                                
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" name="email" placeholder="example@sample.com">
+                                    
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" placeholder="Subject...">
+
+                                    <label for="message">Message</label>
+                                    <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                                
+                                    <input type="submit" value="Submit" class="submitButton" id="submitPush">
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="portfolioScript.js"></script>
+</body>
+</html>

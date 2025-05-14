@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+    <title>Deck Game</title>
+</head>
+<body>
+    <button type="button" class="dark" id="darkButton" onclick = "toggleDark()">
+        <img id="darkToggle" src="./images/moon.png" width="40" height="40"  alt="buttonpng"/>
+    </button>
+    <h1>Deck Game</h1>
+    <div class="flex-container" id="flex">
+        <div class = "child child1" id="info">
+            <h3>Info</h3>
+            <p>
+                Deck Game is a project I made in a software development class with my partner Kurtis. It's inspired by a mix of the battle systems from
+                 the Pokemon vdeo games and the trading card games. Containing 34 unique cards covering 4 different types, and a random card draw system, each game
+                 is a unique matchup between two players.
+            </p>
+            <p>
+                The game is made in Python and Pygame. Including a full frontend user interface for dragging and interacting with
+                 the cards and systems to cover almost any result or matchup in the game. 
+            </p>
+        </div>
+        <div class = "child child1" id="process">
+            <h3>Process</h3>
+            <p>
+                The project started with deciding what the types of cards would be. Taking inspiration from the Pokemon games, there would be the creatures themselves,
+                 skills to represent the moves, effects to change the boardstate, and items to cause instant changes to the game. Each type of card is built off of the
+                 common traits shared between them all. Cards are drawn into a deck, then further into the player's hand. Over the course of the project, the structure
+                 used to hold the cards changed several times as we found limitations as we worked. It started with just a couple lists but turned into a combination of
+                 dictionaries and lists of tuples.
+            </p>
+        </div>
+        <div class = "child child1" id="images">
+            <h3>Images</h3>
+            <img src="./images/DeckGame/menu.png" width="800" height="530" alt="menu">
+            <img src="./images/DeckGame/board.png" width="800" height="534" alt="boardState">
+        </div>
+    </div>
+<script src="deckGameScript.js"></script>
+</body>
+</html>

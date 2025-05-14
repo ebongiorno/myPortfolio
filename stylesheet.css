@@ -1,0 +1,252 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 25px;
+    background-color: #fecee9;
+    border: 20px ridge #e2bafa;
+    color: black;
+    font-size: 20px;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    background-color: rgb(219, 156, 255);
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    padding: 0px 16px;
+    z-index: 1000;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 1;
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ff9696;
+    color: black;
+}
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #fb9bfb;
+    color: white;
+}
+.topnav a.dark {
+    margin-left: auto; /* Push the dark button to the far right */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    /* border: 10px solid blue; */
+    padding: 10px;
+    gap: 20px; /* gap between child elements */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.child {
+    width: 100%;
+    max-width: 1050px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+    background-color: #fcbee1;
+    border: 10px double #e2bafa;
+}
+
+.link {
+    color: #085060;
+}
+.link:visited {
+    color: #506008;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: transparent;
+
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.listLabel {
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+}
+
+.dark-mode {
+    background-color: #36002a;
+    border: 20px outset #5c0295;
+    color: white;
+}
+.dark-mode2 {
+    background-color: #600850;
+    border: 10px double #490076;
+    color: white;
+}
+.dark-mode-link {
+    color: #BEE1FC;
+}
+.dark-mode-link:visited {
+    color: #E1FCBE;
+}
+
+.avatar{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
+}
+
+.dark {
+    background-image: url(./sun.png);
+}
+
+/*////////////////////////////////////*/
+/*//////////Expandable//////////////*/
+/*////////////////////////////////////*/
+.expandable {
+    --xy-padding: 14px;
+    --border-radius: 6px;
+    --transition-ms: 0.3s;
+
+    max-width: 500px;
+    margin: 1em 0;
+}
+
+.expandable--open .expandable__content-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.expandable--open .expandable__icon {
+    transform: rotate(-90deg);
+}
+
+.expandable__title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 14px; */
+    padding: var(--xy-padding);
+    user-select: none;
+    background-color: #fb9bfb;
+    color: black;
+    /* border-radius: 6px 6px 0 0; */
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    cursor: pointer;
+}
+
+.expandable__icon {
+    transition: transform 300ms;
+    /* transition: transform var(--transition-ms);*/
+}
+
+.expandable__content {
+    padding: 0 var(--xy-padding);
+    line-height: 1.4;
+    border: 1px solid #dddddd;
+    border-top: none;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    overflow: hidden;
+}
+
+.expandable__content-wrapper {
+    display: grid;
+    grid-template-rows: 0fr; /* Ensure it starts closed */
+    transition: grid-template-rows var(--transition-ms) ease-out;
+    overflow: hidden; /* Hide overflow */
+}
+
+/*////////////////////////////////////*/
+/*//////////Contact Form//////////////*/
+/*////////////////////////////////////*/
+
+.nameLabel {
+    display: block;
+    margin-top: 10px;
+}
+
+.submitButton {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2bafa; /* input box border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical /* Allow the user to vertically resize the textarea */
+}
+  
+/* Style the submit button with a specific background color etc */
+.submitButton {
+    background-color: #e2bafa;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker color*/
+.submitButton:hover {
+    background-color: #e2bafa;
+    
+}
+
+/* Add a background color and some padding around the form */
+.container {  /*color on the form, toggle dark*/
+    border-radius: 5px;
+    background-color: #f9d2e8;
+}
+
+.dark-mode-contact {
+    background-color: #4C0000;
+    border: 1px solid black;
+} 
+.dark-mode-contact2 {
+    background-color: #6C0000;
+    color: white;
+}
+.dark-mode-contact3 {
+    background-color: #7F0000;
+    color: white;
+}
+.dark-mode-contact3:hover {
+    background-color: #6C0000;
+}
+
+
+.list {
+    padding: 10px;
+}
